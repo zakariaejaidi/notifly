@@ -38,16 +38,20 @@ export const categories = atom({
     key: 'categories',
     default: [
         {
-            id: "1",
+            id: 1,
             label: "Global"
         },
         {
-            id: "2",
+            id: 2,
             label: "Management"
         },
         {
-            id: "3",
+            id: 3,
             label: "Ideas"
-        }
+        },
+        {
+            id: 4,
+            label: "Planning"
+        },
     ]
 });
