@@ -21,7 +21,7 @@ const Home = () => {
             <main>
                 <div className="container m-auto py-8 px-4 mb-16">
 
-                    <h1 className="text-center font-bold text-4xl text-gray-800 py-8">Notifly On Azure 1.0</h1>
+                    <h1 className="text-center font-bold text-4xl text-gray-800 py-8">Notifly On Azure 1.1</h1>
                     <div className="my-8">
                         <button onClick={() => (setShow(true))} className="bg-indigo-500 text-white active:bg-indigo-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">New</button>
                     </div>
