@@ -43,11 +43,6 @@ const Note = ({ note }) => {
     const editNote = () => {
         setEditMode(true)
     }
-
-    useEffect(() => {
-        console.log('ddd',getCategoryById(note.category_id))
-
-    }, [])
     
 
     return (

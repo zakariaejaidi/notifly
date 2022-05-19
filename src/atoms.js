@@ -55,3 +55,8 @@ export const categories = atom({
         },
     ]
 });
+
+export const currentCategoryId = atom({
+    key: 'current_category_id',
+    default: 1
+});

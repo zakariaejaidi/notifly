@@ -6,8 +6,11 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup';
 import Select from './select';
 import { v4 as uuid } from 'uuid';
+import { currentCategoryId as currentCategoryIdAtom } from '../atoms'
 
 const Modal = ({ show, closeModal }) => {
+
+    const [currentCategoryId, setCurrentCategoryId] = useRecoilState(currentCategoryIdAtom)
 
     const [notes, setNotes] = useRecoilState(notesAtom)
 
@@ -37,6 +40,7 @@ const Modal = ({ show, closeModal }) => {
 
     const addNote = async (values) => {
         setNotes([...notes, { id: uuid(), title: values.title, body: values.body,category_id: category.id }])
+        setCurrentCategoryId(category.id)
         closeModal()
     }
 
